@@ -206,6 +206,10 @@ header .header-inner .button {
     justify-content: center;
     align-items: center;
 }
+
+.service .align {
+    text-align: center;
+}
 /* Portfolio */
 
 .portfolio {
@@ -245,6 +249,7 @@ header .header-inner .button {
     font-size: 14px;
     font-weight: 300;
     margin-top: 0;
+    text-align: center;
 }
 
 .portfolio .row {
