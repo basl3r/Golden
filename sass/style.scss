@@ -103,6 +103,14 @@ header {
     height: 100vh;
 }
 
+header .header-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
 header .header-inner h1, h2 {
     color: $clr-white;
     text-align: center;
@@ -113,21 +121,9 @@ header .header-inner h1,
     text-transform: uppercase;
 }
 
-header .header-inner h2 {
-    font-size: 40px;
-}
-
-header .header-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 150px);
-}
-
 header .header-inner h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+    font-size: clamp(3rem, 4vw, 70px);
     font-weight: 700;
     margin-top: 17px;
     margin-bottom: 60px;
@@ -135,6 +131,7 @@ header .header-inner h1 {
 
 header .header-inner h2 {
     font-family: 'PT Serif', serif;
+    font-size: clamp(2rem, 2vw, 40px);
 }
 
 header .header-inner .button {
@@ -320,3 +317,8 @@ footer div > div {
     width: 250px;
 }
 
+@media (max-width: 757px) {
+    section {
+        padding-bottom: 20px;
+    }
+}
