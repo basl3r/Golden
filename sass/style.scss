@@ -23,6 +23,10 @@ body {
     color: $clr-text-gray;
 }
 
+section {
+    padding-bottom: 120px;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -59,6 +63,9 @@ a:link {
     padding: 0 92px !important;
 }
 
+/* spacing beetween column in portfolio */
+
+.gutter {}
 /* Navigatiotn */
 
 nav {
@@ -146,9 +153,6 @@ header .header-inner .button {
 
 /* Services */
 
-.services {
-    padding-bottom: 120px;
-}
 
 .services h1 {
     margin-bottom: 10px;
@@ -199,3 +203,51 @@ header .header-inner .button {
     background-color: $clr-bg-gray;
 }
 
+.portfolio img {
+    width: auto;
+}
+.portfolio h1 {
+    margin-bottom: 10px;
+}
+
+.portfolio h2 {
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: $clr-text-gray;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+.portfolio h3, h4 {
+    flex: 0 0 100%;
+}
+
+.portfolio h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: $clr-darker-gray;
+    margin-bottom: 0;
+}
+
+.portfolio h4 {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.portfolio .row {
+    margin-bottom: 50px;
+}
+
+.portfolio .row .col-lg-4 > div {
+        width: 292px;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
