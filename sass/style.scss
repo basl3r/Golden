@@ -1,6 +1,7 @@
 /* Variables */
 $clr-white: #ffffff;
 $clr-yellow: #fed136;
+$clr-bg-gray: #f7f7f7;
 $clr-text-gray: #737373;
 $clr-gray: #777777;
 $clr-dark-gray: #333333;
@@ -26,14 +27,18 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -0.1;
+    letter-spacing: -1px;
+    text-align: center;
     color: $clr-darker-gray;
 }
 
 h2 {
-    font-family: 'Droid Serif', sans-serif;
-    font-size: 40px;
-    letter-spacing: -0.1;
+    font-family: 'PT Serif', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: -1px;
+    text-align: center;
+    color: $clr-text-gray;
 }
 
 img {
@@ -49,6 +54,11 @@ a:link {
     text-decoration: none;
     color: $clr-white;
 }
+
+.cont-padding {
+    padding: 0 92px !important;
+}
+
 /* Navigatiotn */
 
 nav {
@@ -74,7 +84,6 @@ nav ul li {
 
 .container-header {
     margin: 0 auto;
-    padding: 0 100px;
     max-width: 1140px;
 }
 
@@ -86,14 +95,18 @@ header {
     height: 100vh;
 }
 
-header h1, h2 {
+header .header-inner h1, h2 {
     color: $clr-white;
     text-align: center;
 }
 
-header h1,
+header .header-inner h1,
         .button {
     text-transform: uppercase;
+}
+
+header .header-inner h2 {
+    font-size: 40px;
 }
 
 header .header-inner {
@@ -130,3 +143,59 @@ header .header-inner .button {
     font-weight: 700;
     cursor: pointer;
 }
+
+/* Services */
+
+.services {
+    padding-bottom: 120px;
+}
+
+.services h1 {
+    margin-bottom: 10px;
+}
+
+.services h2 {
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: $clr-text-gray;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+.services h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: $clr-darker-gray;
+}
+
+.services p {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.services i {
+    color: $clr-yellow;
+    font-size: 36px;
+    text-align: center;
+}
+
+.services .circle {
+    width: 69px;
+    height: 69px;
+    color: transparent;
+    border-radius: 50%;
+    border: 3px solid $clr-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Portfolio */
+
+.portfolio {
+    background-color: $clr-bg-gray;
+}
+
