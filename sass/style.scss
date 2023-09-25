@@ -67,14 +67,6 @@ a:link {
     padding: 0 92px !important;
 }
 
-.cont-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: left;
-    gap: 125px;
-}
-
 /* Navigatiotn */
 
 nav {
@@ -218,6 +210,7 @@ header .header-inner .button {
 
 .portfolio img {
     width: auto;
+    min-width: 200px;
 }
 .portfolio h1 {
     margin-bottom: 10px;
@@ -257,14 +250,25 @@ header .header-inner .button {
 }
 
 .portfolio .row .col-lg-4 > div {
-        width: 291px;
-        height: 90px;
-        background-color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    width: 291px;
+    min-width: 200px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+.portfolio .row .col-sm-6 > div {
+    width: 291px;
+    min-width: 200px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Footer */
 
@@ -311,3 +315,8 @@ footer .social-media {
     cursor: pointer;
     text-align: center;
 }
+
+footer div > div {
+    width: 250px;
+}
+
