@@ -16,6 +16,10 @@ $clr-darker-gray: #222222;
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-size: 16px;
@@ -63,9 +67,14 @@ a:link {
     padding: 0 92px !important;
 }
 
-/* spacing beetween column in portfolio */
+.cont-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    gap: 125px;
+}
 
-.gutter {}
 /* Navigatiotn */
 
 nav {
@@ -243,11 +252,57 @@ header .header-inner .button {
 }
 
 .portfolio .row .col-lg-4 > div {
-        width: 292px;
+        width: 291px;
         height: 90px;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+}
+
+/* Footer */
+
+footer {
+    height: 120px;
+}
+
+footer a, footer a:visited, footer a:active, footer a:link {
+    text-decoration: none;
+    font-size: 0;
+}
+
+footer span {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    position: relative;
+}
+
+footer ul li i {
+    position: absolute;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+footer .social-media {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    background-color: $clr-darker-gray;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
 }
