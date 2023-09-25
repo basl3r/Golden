@@ -123,7 +123,7 @@ header .header-inner h1,
 
 header .header-inner h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(3rem, 4vw, 70px);
+    font-size: clamp(2.7rem, 4vw, 80px);
     font-weight: 700;
     margin-top: 17px;
     margin-bottom: 60px;
@@ -320,5 +320,9 @@ footer div > div {
 @media (max-width: 757px) {
     section {
         padding-bottom: 20px;
+    }
+
+    header .header-inner {
+        height: calc(100vh - 200px);
     }
 }
